@@ -1,3 +1,4 @@
+//to run: gcc test.c -lreadline -lcurses
 // C Program to design a shell in Linux
 #include<stdio.h>
 #include<string.h>
