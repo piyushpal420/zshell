@@ -35,7 +35,7 @@ git clone https://github.com/piyushpal420/zshell.git
 python3 frontend.py
 ```
 ## Shell C Compilation Process
-#### NOTE: This code will run only on UNIX/LINUX systems so either install WSL on your windows or use a VM with ubuntu.
+> #### NOTE: This code will run only on UNIX/LINUX systems so either install WSL on your windows or use a VM with ubuntu.
 ### 1. Install GNU's readLine library using:-
 
 ```bash
@@ -51,7 +51,7 @@ sudo apt-get install libreadline-dev
 gcc test.c -lreadline -lcurses
 ```
                                                                 
-#### This line adds linkage with the GNU Readline library. I have made use of readline() and add_history() functions,which are part of the readline library, which cannot be used without linking it during compilation.
+> This line adds linkage with the GNU Readline library. I have made use of readline() and add_history() functions, which are part of the readline library, which cannot be used without linking it during compilation.
 ---
 
 ## 🛠️ Technologies Used
