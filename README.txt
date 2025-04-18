@@ -8,6 +8,8 @@ This Project implements a custom shell for linux using the readline library from
 
 NOTE: This code will run only on UNIX/LINUX systems so either install WSL on your windows or use a VM with ubuntu.
 
+JUST RUN frontend.py FILE AND THE SHELL WILL RUN
+
 1. Install GNU's readLine library using:-
 
 sudo apt-get install libreadline-dev        (linux)

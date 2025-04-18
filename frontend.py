@@ -5,7 +5,7 @@ from gi.repository import Gtk, Vte, Gdk, Pango, GLib
 
 class CustomShellWindow(Gtk.Window):
     def __init__(self):
-        super().__init__(title="Custom Shell Terminal")
+        super().__init__(title="C-QUENCE: A CUSTOM SHELL")
         self.set_default_size(800, 400)
         self.bg_color = Gdk.RGBA(0, 0, 0, 1)
         self.fg_color = Gdk.RGBA(1, 1, 1, 1)
