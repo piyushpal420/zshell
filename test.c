@@ -33,8 +33,8 @@ void getAICommand(const char* input, char* aiCommand, size_t sz) {
     trim(sanitized_input);
     char cmd[2048];
     snprintf(cmd, sizeof(cmd),
-        "/home/lenovo_user/zshell/venv/bin/python3 "
-        "/home/lenovo_user/zshell/inference.py \"%s\"",
+        "python3"
+        "/home/zephyr/Desktop/zshell/inference.py \"%s\"",
         sanitized_input);
     FILE* fp = popen(cmd, "r");
     if (!fp) {
@@ -51,7 +51,7 @@ void getAICommand(const char* input, char* aiCommand, size_t sz) {
 
 void init_shell() {
     clear();
-    printf("\n\n\n\n**** MY SHELL ****\n\n");
+    printf("\n\n\n\n**** CUSTOM ZSHELL ****\n\n");
     printf("    - USE AT YOUR OWN RISK -\n\n\n");
     char* user = getenv("USER");
     printf(" User: @%s\n", user);
@@ -140,7 +140,7 @@ int processString(char* str, char** parsed) {
     if (!isCommandAvailable(parsed[0])) {
         char aiOut[MAXCOM];
         getAICommand(str, aiOut, sizeof(aiOut));
-        printf("🤖 %s\n", aiOut);  // 🤖 emoji added
+        printf("🤖 %s\n", aiOut);
         return 0;
     }
     return 1;
